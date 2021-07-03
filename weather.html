@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>お天気パネル</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+        <div class="header-logo">Weather</div>
+        <div class="header-list">
+            <ul>
+                <li>週間天気予報</li>
+                <li>その他</li>
+                <li>その他</li>
+            </ul>
+        </div>
+    </div>
+    <div class="place-form">
+        <h3 class="placename">場所(都道府県)</h3>
+        <input>
+        <input class ="wroteplace" type="submit" value="決定">
+    </div>
+
+    <div class="main">
+        <div class="container1">
+            <h1>Weahter<span>.</span></h1>
+            <h2>毎日時の天気予報</h2>
+        </div>
+    </div>
+
+    </div>
+    <div class="weather">
+      <div class="today">
+        <div class="weather-icon">
+          <i id="cicon" class="wi wi-day-sunny"></i>
+        </div>
+        <div class="weather-detail">
+          <div id="ctempid" class="current-temperature"></div>
+          <div id="cweather" class="name"></div>
+          <div class="temperature">
+            <span id="cmaxtem"></span><span id="cmintem"></span>
+          </div>
+          <div id="humidity" class="rainy-percent"></div>
+        </div>
+      </div>
+      <ul class="week">
+        <li class="day">
+          <div id="week1" class="day-of-the-week"></div>
+          <div class="weather-icon">
+            <i class="wi wi-day-sunny"></i>
+          </div>
+          <div class="temperature">
+            <span>25°</span>/<span>21°</span>
+          </div>
+        </li>
+        <li class="day">
+          <div id="week2" class="day-of-the-week"></div>
+          <div class="weather-icon">
+            <i class="wi wi-cloud"></i>
+          </div>
+          <div class="temperature">
+            <span>22°</span>/<span>18°</span>
+          </div>
+        </li>
+        <li class="day">
+          <div id="week3" class="day-of-the-week"></div>
+          <div class="weather-icon">
+            <i class="wi wi-day-rain"></i>
+          </div>
+          <div class="temperature">
+            <span>17°</span>/<span>12°</span>
+          </div>
+        </li>
+        <li class="day">
+          <div id="week4" class="day-of-the-week"></div>
+          <div class="weather-icon">
+            <i class="wi wi-rain"></i>
+          </div>
+          <div class="temperature">
+            <span>15°</span>/<span>10°</span>
+          </div>
+        </li>
+        <li class="day">
+          <div id="week5" class="day-of-the-week"></div>
+          <div class="weather-icon">
+            <i class="wi wi-day-cloudy"></i>
+          </div>      
+          <div class="temperature">
+            <span>15°</span>/<span>12°</span>
+          </div>
+        </li>
+        <li class="day">
+          <div id="week6" class="day-of-the-week"></div>
+          <div class="weather-icon">
+            <i class="wi wi-day-sunny"></i>
+          </div>
+          <div class="temperature">
+            <span>28°</span>/<span>21°</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">WeatherAPI</div>
+        <div class="footer-list">
+            <ul>
+                <li>適当</li>
+                <li>お問い合わせ</li>
+                <li>わああああ</li>
+            </ul>
+        </div>
+    </div>
+  </body>
+</html>
